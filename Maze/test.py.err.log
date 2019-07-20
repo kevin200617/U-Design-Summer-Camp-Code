@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/robot/Maze/test.py", line 11, in <module>
+    us.mode = 'US-DIST-CM'
+  File "/usr/lib/python3/dist-packages/ev3dev/core.py", line 1716, in mode
+    self._mode = self.set_attr_string(self._mode, 'mode', value)
+  File "/usr/lib/python3/dist-packages/ev3dev/core.py", line 229, in set_attr_string
+    return self._set_attribute(attribute, name, value)
+  File "/usr/lib/python3/dist-packages/ev3dev/core.py", line 211, in _set_attribute
+    attribute.write(value.encode())
+OSError: [Errno 22] Invalid argument

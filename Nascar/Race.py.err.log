@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/home/robot/Nascar/Race.py", line 37, in <module>
+    btn.process() # Check for currently pressed buttons. 
+  File "/usr/lib/python3/dist-packages/ev3dev/core.py", line 2660, in process
+    if handler is not None: handler(button in new_state)
+  File "/home/robot/Nascar/Race.py", line 28, in up
+    moveForward(4.5) #change the 3 to whatever you want
+  File "/home/robot/Nascar/Race.py", line 12, in moveForward
+    m1.run_forever(speed_sp = sp)
+  File "/usr/lib/python3/dist-packages/ev3dev/core.py", line 799, in run_forever
+    setattr(self, key, kwargs[key])
+  File "/usr/lib/python3/dist-packages/ev3dev/core.py", line 589, in speed_sp
+    self._speed_sp = self.set_attr_int(self._speed_sp, 'speed_sp', value)
+  File "/usr/lib/python3/dist-packages/ev3dev/core.py", line 223, in set_attr_int
+    return self._set_attribute(attribute, name, str(int(value)))
+  File "/usr/lib/python3/dist-packages/ev3dev/core.py", line 216, in _set_attribute
+    raise Exception("%s is not connected" % self)
+Exception: Motor(outA) is not connected
